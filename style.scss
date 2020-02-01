@@ -1,0 +1,311 @@
+$yellow:#fcc60b;
+
+@font-face {
+  font-family: 'Star Jedi Hollow';
+  src: url("//db.onlinewebfonts.com/t/dcb5cf864bdbede594c7d31a204dee8d.eot"); src: url("//db.onlinewebfonts.com/t/dcb5cf864bdbede594c7d31a204dee8d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/dcb5cf864bdbede594c7d31a204dee8d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/dcb5cf864bdbede594c7d31a204dee8d.woff") format("woff"), url("//db.onlinewebfonts.com/t/dcb5cf864bdbede594c7d31a204dee8d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/dcb5cf864bdbede594c7d31a204dee8d.svg#Star Jedi Hollow") format("svg");
+}
+
+@font-face {
+  font-family: 'Star Jedi';
+  src: url('fonts/StarJedi.woff');
+}
+
+@font-face {
+  font-family: 'Star Jedi Rounded';
+  src: url('fonts/StarJediRounded-jW3R.ttf');
+}
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url('fonts/Tahoma.ttf');
+}
+
+* {
+  color: $yellow;
+}
+
+h1,h2,h3{
+  font-family:'Star Jedi';
+}
+
+.container{
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  background:  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('img/header-background.jpg') center/ cover ;
+  height: 100vh;
+  max-height: 1500px;
+  max-width: 3000px;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__top {
+    width: 100%;
+    display: flex;
+    padding: 40px 40px 0;
+    justify-content: space-between;
+
+
+    .menu {
+      .menu__items {
+        display: flex;
+        margin: 0  -20px;
+
+        .menu__item {
+          padding: 0 20px;
+
+          a {
+            font-family: 'Tahoma';
+            font-size: 23px;
+            font-weight: 700;
+
+            &:hover{
+              color: darken( $yellow, 25%);
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .header-title{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    max-width: 500px;
+
+    img{
+      display: block;
+      max-width: 80%;
+    }
+
+    .header-title__name{
+      font-family: 'Lato', sans-serif;
+      font-size: 26px;
+      line-height: 44.89px;
+      letter-spacing: 4.95px;
+      text-transform: uppercase;
+    }
+
+    .header-title__date{
+      color: #ffffff;
+      line-height: 40.05px;
+      font-weight: 300;
+      font-size: 29px;
+      opacity: 0.81;
+      letter-spacing: 3.16px;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+  }
+
+}
+
+.main{
+  margin: 0 auto;
+  max-width: 3000px;
+  background: url('https://polarnotion.github.io/starwarsintro/img/stars-bg.jpg');
+
+  .main-section{
+    padding-top: 100px;
+
+    .main-section__header{
+      text-align: center;
+      color:$yellow;
+      font-size: 50px;
+      line-height: 93.87px;
+
+      .about{
+        font-family: "Star Jedi Hollow";
+      }
+    }
+    .main-section__text{
+      margin: 0 auto;
+      color: #fff ;
+      font-family: Lato;
+      font-size: 35px;
+      text-align: justify;
+      max-width: 80%;
+    }
+  }
+
+  .course-info{
+    padding-top: 100px;
+
+
+    &__dates, &__design-line{
+      justify-content: center;
+      display: flex;
+    }
+
+
+    &__data{
+      padding: 0 100px;
+
+      a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      .course-info__title{
+        padding-top: 8px;
+        font-family: Star Jedi;
+        font-size: 32px;
+        line-height: 45.55px;
+      }
+    }
+
+    &__design-line{
+      align-items: center;
+
+      .line{
+        max-width: 80vw;
+        margin-right: 3vw;
+      }
+    }
+  }
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+      padding: 100px 0;
+       font-size: 50px;;
+    }
+
+    &__contacts{
+      display: flex;
+
+      .contact{
+        padding: 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__img{
+          max-width: 323px;
+          width: 100%;
+          border-radius: 50%;
+          border: 5px solid $yellow;
+        }
+        .contact__img_min{
+          margin-top: 30px;
+          max-width: 280px;
+          width: 100%;
+          border-radius: 50%;
+          border: 5px solid $yellow;
+        }
+
+        .cover-img{
+          max-width: 350px;
+          padding: 5px;
+          border: 5px solid $yellow;
+          border-radius: 50%;
+          text-align: center;
+          img{
+            display: inline;
+
+          }
+        }
+
+        &__data{
+          padding-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+
+          .contact__description{
+            padding-left: 50px;
+          }
+
+        .contact__name{
+          color:#fff;
+          font-family: Lato;
+          font-size: 40px ;
+        }
+          .contact__role{
+            font-family: Lato;
+            font-style: italic;
+            font-size: 20px;
+            line-height: 30.25px;
+          }
+          .contact__mail{
+            color: #ffffff;
+            font-family: Lato;
+            font-size: 19px;
+            font-weight: 300;
+          }
+
+          .contact__phone{
+            padding-left: 30px;
+            color: #ffffff;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 40.25px;
+            position: relative;
+
+            &::before{
+              content: '';
+              position: absolute;
+              width: 25px;
+              height: 25px;
+              background: url('img/phone-icon.png') center/ contain;
+              top: calc(50% - 13px);
+              left:0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  background: $yellow ;
+  padding:30px 0;
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 0 75px;
+    .social__img{
+
+    }
+    .social__text{
+      padding-left: 30px;
+      color: #000;
+      font-family: Lato;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 3.28px;
+    }
+  }
+}
+
+
+
+
+
