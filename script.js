@@ -1,3 +1,32 @@
+const header = document.querySelector(".header__top");
+const menuIcon = document.querySelector(".menu__item_icon");
+const menu = document.querySelector(".menu__items");
+
+menuIcon.addEventListener("click",() => {
+    menu.classList.toggle("close");
+});
+
+(function scrollHideMenu(){
+    let prevScrollPos = window.pageYOffset;
+    window.addEventListener('scroll', ()=> {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollPos < currentScrollPos) {
+            header.classList.add("hide");
+        } else {
+            header.classList.remove("hide");
+        }
+        prevScrollPos = currentScrollPos;
+        if (currentScrollPos > 0){
+            header.classList.add("shadow");
+        }else {
+            header.classList.remove("shadow");
+        }
+    });
+})();
+
+
+
+
 /*
  * Star Wars opening crawl from 1977
  *

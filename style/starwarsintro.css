@@ -4,7 +4,7 @@ body {
     font: 700 1em "News Cycle", sans-serif;
     letter-spacing: .15em;
     color: #ff6;
-    background: #000;
+
 
     margin: 0;
 }
@@ -60,14 +60,35 @@ body {
 .starwars .titles > div {
     position: absolute;
     top: 100%;
-    -webkit-animation: titles 120s linear 13s ;
-    animation: titles 120s linear 13s ;
+    -webkit-animation: titles 140s linear 13s ;
+    animation: titles 140s linear 13s ;
 }
 .starwars .titles > div > p {
     margin: 1.35em 0 1.85em 0;
     line-height: 1.35em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+
+@media screen and (max-width: 480px) {
+    .starwars .start{
+        font-size: 160%;
+    }
+    .starwars .intro {
+        width: 15em;
+        margin: 0 0 0 -7.5em;
+        font-size: 100%;
+    }
+    .starwars .titles > div {
+        -webkit-animation: titles 240s linear 13s ;
+        animation: titles 240s linear 13s ;
+    }
+    .starwars .titles {
+        width: 16.65em;
+        margin: 0 0 0 -8.325em;
+        font-size: 150%;
+    }
 }
 
 @-webkit-keyframes intro {

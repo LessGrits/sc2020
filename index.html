@@ -3,80 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width,  user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SC20</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/zero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/starwarsintro.css">
+    <link rel="stylesheet" href="style/zero.css">
+    <link rel="stylesheet" href="style/style.css">
+
+
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="container">
-        <div class="header__top">
+        <div class="header__top shadow">
             <div class="logo">
+                <img src="img/sc_logo.png" alt="">
+                <nav class="menu">
+                    <ul class="menu__items close">
+                        <li class="menu__item_icon">
+                            <a href="javascript:void(0)" id="menu-icon">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                        <li class="menu__item "><a href="#header">HOME</a></li>
+                        <li class="menu__item "><a href="#aboutCourse">ABOUT COURSE</a></li>
+                        <li class="menu__item "><a href="#aboutBest">ABOUT BEST VINNYTSIA</a></li>
+                        <li class="menu__item "><a href="#contactUs">CONTACT US</a></li>
+
+                    </ul>
+                </nav>
                 <img src="img/logo-header.png" alt="">
             </div>
-            <nav class="menu">
-                <ul class="menu__items">
-                    <li class="menu__item"><a href="#">HOME</a></li>
-                    <li class="menu__item"><a href="#">ABOUT COURSE</a></li>
-                    <li class="menu__item"><a href="#">ABOUT BEST VINNYTSIA</a></li>
-                    <li class="menu__item"><a href="#">CONTACT US</a></li>
-                </ul>
-            </nav>
+
         </div>
         <div class="header-title">
-            <img src="img/header-name-course.png" alt="header-title__year" class="header-title__year">
-            <p class="header-title__name">THE DATA SCIENCE AWAKENS</p>
-            <img class="header-title__city" src="img/vinnytsia-title.png" alt="header-title__year">
+            <h2 class="header-title__around">best course</h2>
+            <p class="header-title__name">THE RISE OF DATA SCIENCE</p>
+            <h2 class="header-title__around down">in summer 2020</h2>
             <p class="header-title__date">7 - 15 AUGUST</p>
         </div>
     </div>
 </header>
 <main class="main">
     <div class="container">
-      <!--  <section class="main-section">
-            <h2 class="main-section__header">
-                <span class="about">about</span> CouRSE
-            </h2>
-            <p class="main-section__text">
-                Vinnytsia is a multicultural city, open to new ideas. It has a strong industrial potential and well -
-                developed transport infrastructure. The city lies on both banks of the Southern Buh River in the central
-                part of Ukraine. People have been living on Vinnytsia lands since Trypillya times. The official date of
-                the city foundation is 1363. Among others appeared Vinnytsia - a wooden fortification on the waftage
-                over river Buh. Modern Vinnytsia is a city that remembers and honors its history of over seven
-                centuries, while builds its future and sees the prospect of its development in the years ahead.
-                Vinnytsia is a multicultural city, open to new ideas. It has a strong industrial potential and well -
-                developed transport infrastructure. The city lies on both banks of the Southern Buh River in the central
-                part of Ukraine. People have been living on Vinnytsia lands since Trypillya times. The official date of
-                the city foundation is 1363. Among others appeared Vinnytsia - a wooden fortification on the waftage
-                over river Buh. Modern Vinnytsia is a city that remembers and honors its history of over seven
-                centuries, while builds its future and sees the prospect of its development in the years ahead.
-            </p>
-        </section>
-        <section class="main-section">
-            <h2 class="main-section__header">
-                <span class="about">about</span> BEST vinnytsia
-            </h2>
-            <p class="main-section__text">
-                Vinnytsia is a multicultural city, open to new ideas. It has a strong industrial potential and well -
-                developed transport infrastructure. The city lies on both banks of the Southern Buh River in the central
-                part of Ukraine. People have been living on Vinnytsia lands since Trypillya times. The official date of
-                the city foundation is 1363. Among others appeared Vinnytsia - a wooden fortification on the waftage
-                over river Buh. Modern Vinnytsia is a city that remembers and honors its history of over seven
-                centuries, while builds its future and sees the prospect of its development in the years ahead.
-                Vinnytsia is a multicultural city, open to new ideas. It has a strong industrial potential and well -
-                developed transport infrastructure. The city lies on both banks of the Southern Buh River in the central
-                part of Ukraine. People have been living on Vinnytsia lands since Trypillya times. The official date of
-                the city foundation is 1363. Among others appeared Vinnytsia - a wooden fortification on the waftage
-                over river Buh. Modern Vinnytsia is a city that remembers and honors its history of over seven
-                centuries, while builds its future and sees the prospect of its development in the years ahead.
-            </p>
-        </section>
--->
-<section class="animate-section">
+     <section class="animate-section" id="aboutCourse">
             <article class="starwars">
                 <audio preload="auto">
                     <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg"/>
@@ -84,9 +56,9 @@
                 </audio>
                 <section class="start">
                     <p>
-                        Start <br> <span>Star Wars opening crawl</span> <br> from 1977
+                        PRESS ME <br> <span>Star Wars opening crawl</span>
                         <br>
-                        <span>Remake by Tim Pietrusky</span>
+
                     </p>
                 </section>
                 <div class="animation">
@@ -95,53 +67,13 @@
                     </section>
                     <section class="titles">
                         <div contenteditable="true" spellcheck="false">
-                            <p>
-                                Vinnytsia is a multicultural city,
-                                open to new ideas. It has a strong
-                                industrial potential and well -
-                                developed transport infrastructure.
-                                The city lies on both banks of the
-                                Southern Buh River in the central
-                            </p>
-                            <p>
-                                part of Ukraine. People have been
-                                living on Vinnytsia lands since
-                                Trypillya times. The official date
-                                of the city foundation is 1363.
-                                Among others appeared Vinnytsia -
-                                a wooden fortification on the
-                            </p>
-                            <p>
-                                waftage over river Buh. Modern
-                                Vinnytsia is a city that remembers
-                                and honors its history of over seven
-                                centuries, while builds its future
-                                and sees the prospect of its
-                                development in the years ahead.
-                            </p>
-                            <p>
-                                Vinnytsia is a multicultural city,
-                                open to new ideas. It has a strong
-                                industrial potential and well -
-                                developed transport infrastructure.
-                                The city lies on both banks of the
-                                Southern Buh River in the central
-                                part of Ukraine. People have been
-                            </p>
-                            <p>
-                                living on Vinnytsia lands since Trypillya
-                                times. The official date of the city
-                                foundation is 1363. Among others appeared
-                                Vinnytsia - a wooden fortification on the
-                                waftage over river Buh. Modern Vinnytsia
-                            </p>
-                            <p>
-                                is a city that remembers and honors its
-                                history of over seven centuries, while
-                                builds its future and sees the prospect
-                                of its development in the years ahead.
-                            </p>
-
+                                <p class="center-title">Episode IX </p>
+                                <p class="center-title">THE RISE OF DATA SCIENCE</p>
+                            <br>
+                            <br>
+                            <p>In our rapidly progressing world we need to catch up with technologies quickly. There is a lovely galaxy called BEST Vinnytsia, which has great power in Data Science and wants to share it with 22 happy students from all over Europe.</p>
+                               <p>Are you the one that course team needs for learning Data Science? Are you up for this challenge? Do you want to spend a week with people from all over the Universe?  Well, actually only from all over the Europe, but whose also as enthusiastic, funny and crazy as you are?</p>
+                                <p>Our team is sure that Vinnytsia will be a perfect summer place for you. Where new friends, new cultures and knowledge are waiting for you. We need YOU to discover Data Science with us. We know you are the one!</p>
                         </div>
                     </section>
 
@@ -243,30 +175,64 @@
 <section class="course-info">
     <div class="course-info__dates">
         <div class="course-info__data">
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1S1U0XPv0FmS7KiKquTIoHpvZVshcA7qD/view?usp=sharing" target="_blank">
                 <img src="img/survival-gide.png" alt="guide">
                 <h3 class="course-info__title">Survival Guide</h3>
             </a>
         </div>
         <div class="course-info__data">
-            <a href="#">
+            <a href="https://drive.google.com/file/d/1_3WiyAs-6uAv08cmQg_lc_sPS41p9mlJ/view?usp=sharing" target="_blank">
                 <img src="img/calendar.png" alt="guide">
                 <h3 class="course-info__title">Schedule</h3>
             </a>
         </div>
     </div>
-    <div class="course-info__design-line">
-        <img src="img/hr-line.png" alt="" class="line">
-        <img src="img/socol.png" alt="" class="ship">
-    </div>
+
 </section>
-        <section class="contact-us">
+        <section class="main-section" id="aboutBest">
+            <h2 class="main-section__header">
+                <span class="about">about</span> BEST vinnytsia
+            </h2>
+           <div class="main-section__body">
+               <p class="main-section__text">
+                   <span >BEST Vinnytsia joined BEST in 2010 at the base of Vinnytsia National Technical University, since that time we have been providing student development on local and European level. We are to showing students their opportunities and potential, helping become more internationally minded, through a better understanding of European culture and the ability to help and work in the world around them.</span>
+                   <br>
+                   <br>
+                   <span > Members of our local group are very active and open-minded to improvement, we like learning new things and ﬂexible in unexpected situations. We value friendship, as it’s the one of the most important things in BEST working process. And we are trying to stay fun no matter what. We really want to share our spirit with YOU.</span>
+                   <br>
+                   <br>
+                    <span >In nine years BEST Vinnytsia have done 8 seasonal courses and this is Episode IX – The Rise of Data Science.</span>
+                </p>
+               <img src="img/about-best-img.jpg" class="main-section_img" alt="">
+           </div>
+        </section>
+        <div class="course-info__design-line">
+            <img src="img/hr-line.png" alt="" class="line">
+            <img src="img/socol.png" alt="" class="ship">
+        </div>
+        <section class="contact-us" id="contactUs">
             <h2 class="contact-us__title">Contact us!</h2>
+            <div class="contact-us__contacts_top">
+                <div class="contact">
+                    <div class="cover-img">
+                        <img class="contact__img" src="img/contact2.png" alt="">
+                    </div>
+                    <div class="contact__data">
+                        <img class="contact-icon2" src="img/contact-icon2.png" alt="">
+                        <div class="contact__description">
+                            <h3 class="contact__name">Daryna</h3>
+                            <p class="contact__role">Main Organizer</p>
+                            <p class="contact__mail">dasha.kravchenko@BEST.eu.org</p>
+                            <p class="contact__phone">+380 63 278 54 20 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="contact-us__contacts">
                 <div class="contact">
                     <img class="contact__img_min" src="img/contact1.png" alt="">
                     <div class="contact__data">
-                        <img src="img/contact-icon1.png" alt="">
+                        <img class="contact-icon1" src="img/contact-icon1.png" alt="">
                         <div class="contact__description">
                             <h3 class="contact__name">Artur</h3>
                             <p class="contact__role">Participant Responsible</p>
@@ -280,7 +246,7 @@
                         <img class="contact__img" src="img/contact2.png" alt="">
                     </div>
                     <div class="contact__data">
-                            <img src="img/contact-icon2.png" alt="">
+                            <img class="contact-icon2" src="img/contact-icon2.png" alt="">
                         <div class="contact__description">
                             <h3 class="contact__name">Daryna</h3>
                             <p class="contact__role">Main Organizer</p>
@@ -292,7 +258,7 @@
                 <div class="contact">
                     <img class="contact__img_min" src="img/contact3.png" alt="">
                     <div class="contact__data">
-                        <img src="img/contact-icon3.png" alt="">
+                        <img class="contact-icon3" src="img/contact-icon3.png" alt="">
                         <div class="contact__description">
                             <h3 class="contact__name">Artem</h3>
                             <p class="contact__role">Participant Responsible</p>
@@ -309,13 +275,13 @@
 <footer class="footer">
     <div class="container">
         <div class="social">
-            <a href="https://www.facebook.com/BestVinnytsia">
+            <a href="https://www.facebook.com/BestVinnytsia" target="_blank">
                 <img class="social__img" src="img/facebook-icon.png" alt="facebook">
                 <p class="social__text">www.facebook.com/BestVinnytsia</p>
             </a>
         </div>
         <div class="social">
-            <a href="#">
+            <a href="https://www.instagram.com/best_vinnytsia/" target="_blank">
                 <img class="social__img" src="img/instagram-icon.png" alt="instagram">
                 <p class="social__text">@best_vinnytsia </p>
             </a>
