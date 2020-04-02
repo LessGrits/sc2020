@@ -53,31 +53,31 @@ h1, h2, h3 {
   .header .header__top {
     z-index: 1999999;
     position: fixed;
-    width: 100%;
+    /*width: 100%;
+    display: flex;
+    padding: 40px 40px 0;
+    justify-content: space-between;
+    align-items: center;*/
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 40px 40px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .header .header__top .logo {
-      width: 100vw;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .header .header__top .logo img {
-        max-width: 200px;
-        padding: 0 10px; }
+    padding: 20px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+    .header .header__top img {
+      max-width: 150px;
+      padding: 0 10px;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
     .header .header__top .menu .menu__items {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -95,12 +95,23 @@ h1, h2, h3 {
       .header .header__top .menu .menu__items .menu__item_icon {
         display: none; }
   .header .hide {
-    top: -220px; }
+    top: -220px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
     .header .hide .menu {
       display: none; }
   .header .shadow {
-    background: rgba(0, 0, 0, 0.91);
-    padding-top: 0; }
+    background: black;
+    padding: 10px;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s; }
+    .header .shadow img {
+      max-width: 100px;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
     .header .shadow .menu {
       top: 25px; }
   .header .header-title {
@@ -144,8 +155,7 @@ h1, h2, h3 {
   max-width: 3000px;
   background: url("https://polarnotion.github.io/starwarsintro/img/stars-bg.jpg"); }
   .main .main-section {
-    padding-top: 100px;
-    height: 100vh; }
+    padding-top: 100px; }
     .main .main-section .main-section__header {
       text-align: center;
       color: #fcc60b;
@@ -256,6 +266,9 @@ h1, h2, h3 {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
